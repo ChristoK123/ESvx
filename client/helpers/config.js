@@ -1,6 +1,7 @@
 //Accounts required to submit username and related email.
 Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_AND_EMAIL',
+  passwordSignupFields: 'USERNAME_AND_EMAIL_AND_ROLE'
+});
 
 extraFields: [{
 	fieldName: 'role',
@@ -12,10 +13,11 @@ extraFields: [{
 		}
 		return true;
 	}
-}]
-});
+}];
 
-EpicEditorOptions={
+//NTS: De-comment these if you want them back. 
+
+/*EpicEditorOptions={
 	container:  'editor',
 	basePath:   '/editor',
 	clientSideStorage: false,
@@ -26,7 +28,7 @@ EpicEditorOptions={
 	}
 };
 //Currently allows users to share with GooglePlus and Twitter.
-SharrreOptions={
+/*SharrreOptions={
 	share: {
 	  googlePlus: true,
 	  // facebook: true,
@@ -43,7 +45,7 @@ SharrreOptions={
 	enableHover: false,
 	enableCounter: false,
 	enableTracking: true
-};
+}; */
 
 Statuses={
 	pending: 1,

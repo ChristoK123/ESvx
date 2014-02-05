@@ -17,6 +17,9 @@ Template.user_edit.helpers({
   profileUrl: function(){
     return Meteor.absoluteUrl()+"users/"+this.slug;
   },
+  role: function(){
+    return getRole(this);
+  },
   hasNotificationsUsers : function(){
     return getUserSetting('notifications.users', '', this) ? 'checked' : '';
   },

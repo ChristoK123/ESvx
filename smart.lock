@@ -11,8 +11,7 @@
       "crypto-md5": {},
       "iron-router": {},
       "nprogress": {},
-      "fast-render": {},
-      "roles": {}
+      "fast-render": {}
     },
     "packages": {
       "momentjs": {
@@ -49,11 +48,6 @@
         "git": "https://github.com/arunoda/meteor-fast-render.git",
         "tag": "v0.1.12",
         "commit": "b190f1592401f4084ce54b8f713b134e35a4e0db"
-      },
-      "roles": {
-        "git": "https://github.com/alanning/meteor-roles.git",
-        "tag": "v1.2.6",
-        "commit": "f2a9058281f8f2fe028767841d7445aadd6893cf"
       }
     }
   }

@@ -9,7 +9,6 @@
     "crypto-md5": {},
     "iron-router": {},
     "nprogress": {},
-    "fast-render": {},
-    "roles": {}
+    "fast-render": {}
   }
 }
