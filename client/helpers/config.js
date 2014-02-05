@@ -1,6 +1,18 @@
 //Accounts required to submit username and related email.
 Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_AND_EMAIL'
+  passwordSignupFields: 'USERNAME_AND_EMAIL',
+
+extraFields: [{
+	fieldName: 'role',
+	fieldLabel: 'Role',
+	validate: function(value, errorFn) {
+		if (value == ' ') {
+			errorFn("Must include a role.");
+			return false;
+		}
+		return true;
+	}
+}]
 });
 
 EpicEditorOptions={
