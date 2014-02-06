@@ -1,8 +1,6 @@
 //Accounts required to submit username and related email.
 Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_AND_EMAIL_AND_ROLE'
-});
-
+ 	passwordSignupFields: 'USERNAME_AND_EMAIL',
 extraFields: [{
 	fieldName: 'role',
 	fieldLabel: 'Role',
@@ -12,8 +10,11 @@ extraFields: [{
 			return false;
 		}
 		return true;
-	}
-}];
+		}
+	}]
+ });
+
+
 
 //NTS: De-comment these if you want them back. 
 

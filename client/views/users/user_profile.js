@@ -21,6 +21,9 @@ Template.user_profile.helpers({
   },
   getGitHubName: function () {
     return getGitHubName(this);
+  },
+  getRole: function() {
+    return getRole(this);
   }
 });
 

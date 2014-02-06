@@ -36,6 +36,12 @@
 						<td><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></td>
 					</tr>
 				{{/if}}
+				{{#if getRole}}
+					<tr>
+						<td>{{i18n "Role"}}:</td>
+						<td><a {{getRole}}</a></td>  <!--NTS: may want to remove anchors -->
+					</tr>
+				{{/if}}
 				{{#if site}}
 					<tr>
 						<td>{{i18n "Site"}}:</td>

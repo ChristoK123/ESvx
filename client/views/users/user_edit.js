@@ -52,6 +52,7 @@ Template.user_edit.events({
       "profile.email": $target.find('[name=email]').val(),
       "profile.twitter": $target.find('[name=twitter]').val(),
       "profile.github": $target.find('[name=github]').val(),
+      "profile.role": $target.find('[name=role]').val(),
       "profile.site": $target.find('[name=site]').val(),
       "profile.notifications.users": $('input[name=notifications_users]:checked').length, // only actually used for admins
       "profile.notifications.posts": $('input[name=notifications_posts]:checked').length,
