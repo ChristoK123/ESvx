@@ -1,6 +1,9 @@
 //Accounts required to submit username and related email.
 Accounts.ui.config({
  	passwordSignupFields: 'USERNAME_AND_EMAIL',
+ 	});
+
+/* wishful thinking
 extraFields: [{
 	fieldName: 'role',
 	fieldLabel: 'Role',
@@ -11,14 +14,14 @@ extraFields: [{
 		}
 		return true;
 		}
-	}]
- });
+	}]; */
+  
 
 
 
-//NTS: De-comment these if you want them back. 
 
-/*EpicEditorOptions={
+
+EpicEditorOptions={
 	container:  'editor',
 	basePath:   '/editor',
 	clientSideStorage: false,
@@ -28,6 +31,8 @@ extraFields: [{
 		editor:'/themes/editor/epic-light.css'
 	}
 };
+
+//NTS: De-comment these if you want them back. 
 //Currently allows users to share with GooglePlus and Twitter.
 /*SharrreOptions={
 	share: {

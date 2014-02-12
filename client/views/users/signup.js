@@ -4,8 +4,7 @@ Template.signup.events({
       var username = $('#username').val();
       var email = $('#email').val();
       var password = $('#password').val();
-      var role = $('role').val();
-      if(!username || !email || !password || !role){
+      if(!username || !email || !password){
         throwError(i18n.t('Please fill in all fields'));
         return false;
       }
@@ -13,7 +12,6 @@ Template.signup.events({
           username: username
         , email: email  
         , password: password
-        , role: role
       }, function(err){
         if(err){
           console.log(err);

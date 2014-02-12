@@ -1,0 +1,22 @@
+<template name="need_role"> <!--make a template to render if role.profile==null -->
+	{{#if currentUser}}
+	{{#if noRole}}
+		{{roleSubmit}}
+	{{/if}}
+	{{/if}}
+</template>
+
+<template name="roleSubmit">
+	<form name="comment" class="comment-form">
+		<div class="control-group"> 
+			<div class="controls">
+				<label for="body">Please select a role.</label>
+					<textarea name="body"></textarea> </div>
+			</div>
+		<div class="control-group">
+		<div class="controls">
+	<button type="submit" class="btn">Add Role to Profile</button>
+		</div> 
+		</div>
+	</form>
+</template>

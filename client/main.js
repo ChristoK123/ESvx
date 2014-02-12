@@ -45,6 +45,9 @@ STATUS_PENDING=1;
 STATUS_APPROVED=2;
 STATUS_REJECTED=3;
 
+/* This is not the right place to insert the stripe code, but will keep it here for ease of access
+for future implementation.
+
 jQuery(function($) {
   $('#payment-form').submit(function(event) {
     var $form = $(this);
@@ -74,5 +77,5 @@ var stripeResponseHandler = function(status, response) {
     // and submit
     $form.get(0).submit();
   }
-};
+}; 8? */
 
