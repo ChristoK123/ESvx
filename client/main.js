@@ -77,5 +77,5 @@ var stripeResponseHandler = function(status, response) {
     // and submit
     $form.get(0).submit();
   }
-}; 8? */
+};  */
 

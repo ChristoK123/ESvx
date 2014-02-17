@@ -59,7 +59,7 @@ Statuses={
 	rejected: 3
 };
 
-var stripeResponseHandler = function(status, response) {
+/* var stripeResponseHandler = function(status, response) {
  var $form = $('#payment-form');
 
  if (response.error) {
@@ -74,4 +74,4 @@ var stripeResponseHandler = function(status, response) {
    // and submit
    $form.get(0).submit();
  }
-};
+}; */

@@ -36,12 +36,10 @@
 						<td><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></td>
 					</tr>
 				{{/if}}
-				{{#if getRole}}
 					<tr>
 						<td>{{i18n "Role"}}:</td>
-						<td><a {{getRole}}</a></td>  
+						<td>{{profile.role}}</td>  
 					</tr>
-				{{/if}}
 				{{#if site}}
 					<tr>
 						<td>{{i18n "Site"}}:</td>

@@ -1,7 +1,7 @@
 <template name="need_role"> <!--make a template to render if role.profile==null -->
 	{{#if currentUser}}
 	{{#if noRole}}
-		{{roleSubmit}}
+		{{>roleSubmit}}
 	{{/if}}
 	{{/if}}
 </template>
