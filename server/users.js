@@ -35,8 +35,8 @@ Accounts.onCreateUser(function(options, user){
   if (!Meteor.users.find().count() )
     user.isAdmin = true;
 
-  // give new users a few invites (default to 3)
-  user.inviteCount = getSetting('startInvitesCount', 3);
+  // give new users a few invites (default to 5)
+  user.inviteCount = getSetting('startInvitesCount', 5);
 
   trackEvent('new user', {username: user.username, email: user.profile.email});
 

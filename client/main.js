@@ -24,16 +24,16 @@ Meteor.subscribe('settings', function(){
 Meteor.subscribe('categories');
 
 // Current User
-// We need to subscribe to the currentUser subscription because by itself, 
-// Meteor doesn't send all the user properties that we need
+/* We need to subscribe to the currentUser subscription because by itself, 
+ Meteor doesn't send all the user properties that we need */
 Meteor.subscribe('currentUser');
 
 // Subscribe to all users for now to make user selection autocomplete work
 Meteor.subscribe('allUsersAdmin');
 
 // Notifications - only load if user is logged in
-// Not mandatory, because server won't publish anything even if we try to load.
-// Remember about Deps.autorun - user can log in and log out several times
+/* Not mandatory, because server won't publish anything even if we try to load.
+ Remember about Deps.autorun - user can log in and log out several times */
 Deps.autorun(function() {
   // userId() can be changed before user(), because loading profile takes time
   if(Meteor.userId()) {

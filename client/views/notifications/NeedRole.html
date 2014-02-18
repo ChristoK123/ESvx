@@ -1,4 +1,4 @@
-<template name="need_role"> <!--make a template to render if role.profile==null -->
+<template name="needRole"> <!--make a template to render if role.profile==null -->
 	{{#if currentUser}}
 	{{#if noRole}}
 		{{>roleSubmit}}
@@ -10,7 +10,7 @@
 	<form name="comment" class="comment-form">
 		<div class="control-group"> 
 			<div class="controls">
-				<label for="body">Please select a role.</label>
+				<label for="body">Please select a role as Educator or Solver.</label>
 					<textarea name="body"></textarea> </div>
 			</div>
 		<div class="control-group">
